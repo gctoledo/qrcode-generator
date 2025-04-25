@@ -2,6 +2,8 @@
 
 **QR Code Generator** é uma API REST desenvolvida com Java 21 e Spring Boot 3.4.4 para gerar QR Codes a partir de um texto e armazená-los automaticamente em um bucket S3 na AWS. O projeto utiliza a biblioteca [ZXing](https://github.com/zxing/zxing) para geração dos códigos e a SDK oficial da AWS para upload dos arquivos.
 
+Projeto para fins didáticos.
+
 ---
 
 ## 📦 Tecnologias
@@ -79,7 +81,7 @@ Content-Type: application/json
 HTTP/1.1 200 OK
 
 {
-  "url": "https://s3.amazonaws.com/qrcode-generator-storage/abc123.png"
+  "url": "https://qrcode-generator-storage.s3.us-east-1.amazonaws.com/3cea00b9-7e24-4ad1-bd35-002ea8c5f4b3.png"
 }
 ```
 
